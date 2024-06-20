@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import Menu from './Menu'
+import Image from 'next/image'
+import logo from '../../assets/logo.png'
 
 export default function Nav() {
   return (
@@ -8,7 +10,12 @@ export default function Nav() {
         <div className="mr-1 pt-2 text-3xl text-gray-100">
           <div className="flex cursor-pointer items-center text-2xl font-bold">
             <Link href="/">
-              <span>Logo</span>
+            <Image
+              src={logo}
+              alt="Logo"
+              width={100}
+              height={30}
+            />
             </Link>
           </div>
         </div>
